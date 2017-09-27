@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:text="시간"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/time" />
+
+            <EditText
+                android:id="@+id/inputhour_S"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:hint="@string/hourandminute"
+                android:inputType="numberDecimal"
+                android:layout_below="@+id/time"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <TextView
+                android:text="시"
+                android:layout_width="wrap_content"
+                android:id="@+id/Hour_S"
+                android:textSize="15sp"
+                android:layout_alignBaseline="@+id/inputhour_S"
+                android:layout_alignBottom="@+id/inputhour_S"
+                android:layout_toRightOf="@+id/inputhour_S"
+                android:layout_toEndOf="@+id/inputhour_S"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/inputminute_S"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:hint="@string/hourandminute"
+                android:inputType="numberDecimal"
+                android:layout_below="@+id/time"
+                android:layout_toRightOf="@+id/Hour_S"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <TextView
+                android:text="분"
+                android:layout_width="wrap_content"
+                android:id="@+id/Minute_S"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_alignBaseline="@+id/inputminute_S"
+                android:layout_alignBottom="@+id/inputminute_S"
+                android:layout_toRightOf="@+id/inputminute_S"
+                android:layout_toEndOf="@+id/inputminute_S" />
+
+            <TextView
+                android:text="~"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Minute_S"
+                android:layout_alignBottom="@+id/Minute_S"
+                android:layout_toRightOf="@+id/Minute_S"
+                android:layout_toEndOf="@+id/Minute_S"
+                android:textSize="20sp"
+                android:id="@+id/hrp2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <EditText
+                android:id="@+id/inputhour_E"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:hint="@string/hourandminute"
+                android:inputType="numberDecimal"
+                android:layout_alignBaseline="@+id/hrp2"
+                android:layout_alignBottom="@+id/hrp2"
+                android:layout_toRightOf="@+id/hrp2"
+                android:layout_toEndOf="@+id/hrp2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <TextView
+                android:text="시"
+                android:layout_width="wrap_content"
+                android:id="@+id/Hour_E"
+                android:textSize="15sp"
+                android:layout_alignBaseline="@+id/inputhour_E"
+                android:layout_alignBottom="@+id/inputhour_E"
+                android:layout_toRightOf="@+id/inputhour_E"
+                android:layout_toEndOf="@+id/inputhour_E"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/inputminute_E"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:hint="@string/hourandminute"
+                android:inputType="numberDecimal"
+                android:layout_below="@+id/time"
+                android:layout_toRightOf="@+id/Hour_E"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <TextView
+                android:text="분"
+                android:layout_width="wrap_content"
+                android:id="@+id/Minute_E"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_alignBaseline="@+id/inputminute_E"
+                android:layout_alignBottom="@+id/inputminute_E"
+                android:layout_toRightOf="@+id/inputminute_E"
+                android:layout_toEndOf="@+id/inputminute_E" />
+
+            <TextView
+                android:text="비용"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/Minute_E"
+                android:id="@+id/Cost_T"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:text="일차"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/Minute_E"
+                android:layout_alignBaseline="@+id/Cost_T"
+                android:layout_alignBottom="@+id/Cost_T"
+                android:layout_toRightOf="@+id/Cost_T"
+                android:id="@+id/T_Day"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="140dp" />
+
+            <EditText
+                android:id="@+id/Cost"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:inputType="numberDecimal"
+                android:layout_below="@+id/Cost_T"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:layout_width="90dp" />
+
+            <TextView
+                android:text="원"
+                android:layout_width="wrap_content"
+                android:id="@+id/cost"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Cost"
+                android:layout_alignBottom="@+id/Cost"
+                android:layout_toRightOf="@+id/Cost"
+                android:layout_toEndOf="@+id/Cost" />
+
+            <EditText
+                android:id="@+id/Day"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:inputType="numberDecimal"
+                android:layout_below="@+id/Cost_T"
+                android:layout_toRightOf="@+id/cost"
+                android:layout_toEndOf="@+id/cost"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:layout_marginLeft="74dp"
+                android:layout_width="30dp" />
+
+            <TextView
+                android:text="일"
+                android:layout_width="wrap_content"
+                android:id="@+id/date"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Day"
+                android:layout_alignBottom="@+id/Day"
+                android:layout_toRightOf="@+id/Day"
+                android:layout_toEndOf="@+id/Day" />
+
+            <TextView
+                android:text="메모"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/cost"
+                android:id="@+id/Memo_T"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/Memo"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:scrollHorizontally="false"
+                android:hint="@string/memo"
+                android:layout_below="@+id/Memo_T"
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:gravity="top|center_vertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:layout_below="@+id/Memo"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/planner_insert_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_review_dialog_submit" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

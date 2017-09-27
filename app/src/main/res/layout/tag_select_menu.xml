@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tag_menu" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/group_container">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:id="@+id/text_tag_group_name1" />
+
+        <com.inu.h4.seoultriphelper.Tag.TagGroup
+            android:id="@+id/tag_group1"
+            style="@style/TagGroup"
+            app:atg_isAppendMode="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:id="@+id/text_tag_group_name2" />
+
+        <com.inu.h4.seoultriphelper.Tag.TagGroup
+            android:id="@+id/tag_group2"
+            style="@style/TagGroup"
+            app:atg_isAppendMode="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:id="@+id/text_tag_group_name3" />
+
+        <com.inu.h4.seoultriphelper.Tag.TagGroup
+            android:id="@+id/tag_group3"
+            style="@style/TagGroup"
+            app:atg_isAppendMode="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:id="@+id/text_tag_group_name4" />
+
+        <com.inu.h4.seoultriphelper.Tag.TagGroup
+            android:id="@+id/tag_group4"
+            style="@style/TagGroup"
+            app:atg_isAppendMode="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:id="@+id/text_tag_group_name5" />
+
+        <com.inu.h4.seoultriphelper.Tag.TagGroup
+            android:id="@+id/tag_group5"
+            style="@style/TagGroup"
+            app:atg_isAppendMode="true"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:id="@+id/btn_tag_confirm"
+        android:layout_below="@+id/group_container"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:id="@+id/btn_tag_cancle"
+        android:layout_below="@+id/group_container"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

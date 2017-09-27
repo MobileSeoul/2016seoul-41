@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="개발자" >
+        <Preference
+            android:key="Setting_Developer_inform"
+            android:summary="개발자 사이트를 확인합니다"
+            android:title="개발자 사이트" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/INUH4" />
+        </Preference>
+
+        <Preference
+            android:key="Setting_MailTo"
+            android:summary="개발자에게 메일을 보냅니다"
+            android:title="메일 보내기"
+            android:selectable="true">
+        </Preference>
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="자동 업데이트" >
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="autoUpdate"
+            android:summary="자동 업데이트를 설정합니다"
+            android:switchTextOff="OFF"
+            android:switchTextOn="ON"
+            android:title="자동 업데이트" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="autoUpdate"
+            android:key="useUpdateNofiti"
+            android:summary="업데이트후 알림을 띄웁니다"
+            android:title="알림 사용" />
+
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:dependency="useUpdateNofiti"
+            android:key="autoUpdate_ringtone"
+            android:ringtoneType="notification"
+            android:showSilent="true"
+            android:title="알림 소리" />
+
+        <Preference
+            android:key="Setting_ver"
+            android:summary="1.0.0"
+            android:title="현재 버전"
+            android:selectable="false">
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

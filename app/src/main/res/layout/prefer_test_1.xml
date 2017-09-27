@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+    <ListView
+        android:id="@+id/prefer_test_list_1"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:divider="#ffcc22"
+        android:dividerHeight="1.5dp"
+        android:choiceMode="singleChoice"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_prefer_test"
+            android:id="@+id/btn_prefer_test_restart_1"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="45dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_prefer_test"
+            android:id="@+id/btn_prefer_test_next"/>
+
+    </LinearLayout>
+
+</LinearLayout>

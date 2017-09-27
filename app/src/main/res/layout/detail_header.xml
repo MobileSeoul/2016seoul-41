@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detail_header_layout"
+    android:visibility="invisible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/detail_border">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_left_image"
+            android:src="@drawable/left_black_arrow"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+            android:padding="0dp"
+            android:background="#00000000"
+            android:layout_alignTop="@+id/btn_right_image"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_right_image"
+            android:src="@drawable/right_black_arrow"
+            android:cropToPadding="false"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            android:background="#00000000"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp" />
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="150dp"
+            android:id="@+id/detail_main_image"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/abc_btn_check_to_on_mtrl_015" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scrollbars="none"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/detail_subimage_layout"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detail_border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:id="@+id/detail_sight_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_avg_ratingBar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_below="@+id/detail_sight_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_avg_current_point"
+            android:text="@string/detail_default_point"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignBottom="@+id/detail_avg_ratingBar"
+            android:layout_toRightOf="@+id/detail_avg_ratingBar"
+            android:layout_toEndOf="@+id/detail_avg_ratingBar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_max_point"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/detail_avg_ratingBar"
+            android:layout_toRightOf="@+id/detail_avg_current_point"
+            android:layout_toEndOf="@+id/detail_avg_current_point"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp" />
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="22sp"
+            android:id="@+id/detail_recommend_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignBottom="@+id/detail_sight_name"
+            android:layout_toLeftOf="@+id/detail_sight_recommend_count"
+            android:layout_toStartOf="@+id/detail_sight_recommend_count"
+            android:background="@drawable/icon_recommend"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/detail_sight_recommend_count"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignBottom="@+id/detail_recommend_icon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:id="@+id/detail_sight_info"
+            android:layout_alignLeft="@+id/detail_avg_ratingBar"
+            android:layout_alignStart="@+id/detail_avg_ratingBar"
+            android:layout_below="@+id/detail_avg_ratingBar"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="1"
+        android:background="@drawable/detail_border">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/detail_put_bucket"
+            android:layout_weight="0.5"
+            android:id="@+id/detail_put_bucket"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/detail_put_planner"
+            android:layout_weight="0.5"
+            android:id="@+id/detail_put_planner" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/detail_map_layout"
+        android:layout_margin="20dp"
+        android:background="@drawable/detail_border">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_relative"
+        android:background="@drawable/detail_border">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_point_and_review"
+            android:id="@+id/detail_review_title"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_ratingBar"
+            android:layout_alignLeft="@+id/detail_review_title"
+            android:layout_alignStart="@+id/detail_review_title"
+            android:layout_below="@+id/detail_review_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_current_point"
+            android:text="@string/detail_default_point"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/detail_ratingBar"
+            android:layout_toRightOf="@+id/detail_ratingBar"
+            android:layout_toEndOf="@+id/detail_ratingBar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_max_point"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/detail_current_point"
+            android:layout_toRightOf="@+id/detail_current_point"
+            android:layout_toEndOf="@+id/detail_current_point"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp" />
+    </RelativeLayout>
+</LinearLayout>

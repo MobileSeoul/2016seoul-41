@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/prefer_test_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/prefer_test_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radio_group"
+        >
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="매우 그렇다"
+            android:id="@+id/prefer_test_very_yes"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/prefer_test_text" />
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="조금 그렇다"
+            android:id="@+id/prefer_test_little_yes"
+            android:layout_gravity="center_vertical"/>
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="보통"
+            android:id="@+id/prefer_test_soso"
+            android:layout_gravity="center_vertical" />
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="조금 아니다"
+            android:id="@+id/prefer_test_little_no"
+            android:layout_gravity="center_vertical" />
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="매우 아니다"
+            android:id="@+id/prefer_test_very_no"
+            android:layout_gravity="center_vertical"/>
+    </RadioGroup>
+
+</RelativeLayout>

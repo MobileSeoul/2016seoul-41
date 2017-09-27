@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/detail_review_writer"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_review_rating"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_below="@+id/detail_review_writer"
+        android:layout_alignLeft="@+id/detail_review_writer"
+        android:layout_alignStart="@+id/detail_review_writer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/detail_review_date"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/detail_review_rating"
+        android:layout_toRightOf="@+id/detail_review_rating"
+        android:layout_toEndOf="@+id/detail_review_rating" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/detail_review_info"
+        android:textSize="18sp"
+        android:layout_below="@+id/detail_review_rating"
+        android:layout_alignLeft="@+id/detail_review_rating"
+        android:layout_alignStart="@+id/detail_review_rating"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

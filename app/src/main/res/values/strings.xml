@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">서울여행</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Prefer Page-->
+    <string name="test_prefer">내 성향 알아보기</string>
+    <string name="no_prefer">저장된 성향이 없습니다.</string>
+    <string name="detail_prefer">당신은 정은지타입!</string>
+
+    <string name="check_prefer_sight">추천 여행지!</string>
+    <string name="restart_prefer_test">재검사</string>
+    <string name="clear_prefer_test">다시 작성</string>
+    <string name="next_prefer_test">다음 문항 이동</string>
+
+    <string name="complete_prefer_test">작성 완료</string>
+
+    <string name="radio_very_yes">매우 그렇다.</string>
+    <string name="radio_little_yes">조금 그렇다.</string>
+    <string name="radio_soso">보통</string>
+    <string name="radio_little_no">조금 아니다.</string>
+    <string name="radio_very_no">매우 아니다.</string>
+
+
+    <!--Detail Page-->
+    <string name="detail_point_and_review">별점 &amp; 리뷰</string>
+    <string name="detail_default_point">0.0</string>
+    <string name="detail_max_point">/ 5.0</string>
+
+    <string name="detail_review_dialog_writer">작성자</string>
+    <string name="detail_review_dialog_title">제목을 입력해주세요.</string>
+    <string name="detail_review_dialog_content">내용을 입력해주세요.</string>
+    <string name="detail_review_dialog_submit">등록</string>
+    <string name="detail_put_bucket">버킷리스트에 담기</string>
+    <string name="detail_put_planner">플래너에 담기</string>
+
+    <string name="hourandminute">00</string>
+    <string name="memo">메모를 입력해주세요.</string>
+    <string name="no_planner_item">여행지 정보가 없습니다.</string>
+
+    <string name="prefer_delete_index">검사 결과 삭제</string>
+
+    <string name="no_bucket">담긴 목록이 없습니다.</string>
+
+    <string name="action_search">검색</string>
+
+    <string name="tab_title_month">월간</string>
+    <string name="tab_title_week">주간</string>
+
+    <string name="add_tag">Add tag</string>
+</resources>

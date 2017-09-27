@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+
+    <ImageButton
+        android:id="@+id/bucket_remove_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/bucket_remove"
+        android:layout_alignEnd="@+id/bucket_list_recommend"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/bucket_list_recommend"/>
+
+    <ImageView
+        android:id="@+id/bucket_list_image"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/bucket_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bucket_list_image" />
+
+    <TextView
+        android:id="@+id/bucket_list_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bucket_list_image" />
+
+
+
+
+</RelativeLayout>

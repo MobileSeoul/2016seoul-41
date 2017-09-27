@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:id="@+id/prefer_sight_image"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/prefer_sight_name"
+        android:layout_alignRight="@+id/prefer_sight_image"
+        android:layout_alignEnd="@+id/prefer_sight_image"
+        android:textSize="36sp"
+        android:gravity="center"
+        style="@style/TextBoundary"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prefer_recommend_count"
+        android:textSize="20sp"
+        android:layout_above="@+id/prefer_rating_bar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/TextBoundary"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"/>
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/prefer_recommend_icon"
+        android:background="@drawable/icon_recommend"
+        android:layout_above="@+id/prefer_rating_bar"
+        android:layout_toLeftOf="@id/prefer_recommend_count"
+        android:layout_toStartOf="@id/prefer_recommend_count"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prefer_rating_bar"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_alignBottom="@+id/prefer_sight_image"
+        android:layout_toLeftOf="@+id/prefer_rating_current_point"
+        android:layout_toStartOf="@+id/prefer_rating_current_point"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_max_point"
+        android:id="@+id/prefer_rating_max_point"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/prefer_sight_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        style="@style/TextBoundary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prefer_rating_current_point"
+        android:text="@string/detail_default_point"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/prefer_sight_image"
+        android:layout_toLeftOf="@+id/prefer_rating_max_point"
+        android:layout_toStartOf="@+id/prefer_rating_max_point"
+        android:layout_marginRight="2dp"
+        android:layout_marginEnd="2dp"
+        style="@style/TextBoundary"/>
+
+</RelativeLayout>

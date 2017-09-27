@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="-10dp" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tag1"
+                android:id="@+id/btn_tag1"
+                android:textAllCaps="false"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tag2"
+                android:id="@+id/btn_tag2"
+                android:textAllCaps="false"
+                android:layout_marginRight="-10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tag3"
+                android:id="@+id/btn_tag3"
+                android:textAllCaps="false"
+                android:layout_marginRight="-10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tag4"
+                android:id="@+id/btn_tag4"
+                android:textAllCaps="false"
+                android:layout_marginRight="-10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/additional_menu">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tag5"
+                android:id="@+id/btn_tag5"
+                android:textAllCaps="false"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tag6"
+                android:id="@+id/btn_tag6"
+                android:textAllCaps="false"
+                android:layout_marginRight="-10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tag7"
+                android:id="@+id/btn_tag7"
+                android:textAllCaps="false"
+                android:layout_marginRight="-10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tag8"
+                android:id="@+id/btn_tag8"
+                android:textAllCaps="false"
+                android:layout_marginRight="-10dp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tag_content" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tag_select_menu_container"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/tag_content_listview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:divider="#ffcc22"
+            android:dividerHeight="1.5dp"
+            android:choiceMode="singleChoice" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
